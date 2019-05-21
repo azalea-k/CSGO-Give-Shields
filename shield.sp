@@ -15,7 +15,7 @@ public void OnPluginStart(){
 	HookEvent("round_start", OnRoundStart);
 }
 public void OnRoundStart(Handle event, const char[] name, bool dontBroadcast)
-			{for (int i = 1; i <= 64; i++)
+			{for (int i = 1; i <= 12; i++)
 				if(IsClientInGame(i) && !IsFakeClient(i)) { 
 					GivePlayerItem(i, "weapon_shield"); 
 				}
